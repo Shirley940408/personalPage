@@ -1,0 +1,11 @@
+<p>User Page</p>
+<h1>Hello {{id}}</h1>
+<ul>
+{% if N==false%}
+<li>You don't have interests.</li>
+{%else%}
+{%for comment in interests %}
+<li>{{comment}}</li>
+{%endfor%}
+{%endif%}
+</ul>
